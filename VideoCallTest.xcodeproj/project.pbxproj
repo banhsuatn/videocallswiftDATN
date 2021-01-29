@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C306F8932588D370006D0A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C306F8922588D370006D0A14 /* AppDelegate.swift */; };
+		C306F8972588D370006D0A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C306F8962588D370006D0A14 /* ViewController.swift */; };
+		C306F89A2588D370006D0A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C306F8982588D370006D0A14 /* Main.storyboard */; };
+		C306F89C2588D370006D0A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C306F89B2588D370006D0A14 /* Assets.xcassets */; };
+		C306F89F2588D370006D0A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C306F89D2588D370006D0A14 /* LaunchScreen.storyboard */; };
+		C342811C258F472B00CD2EFA /* VideoCallCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342811B258F472B00CD2EFA /* VideoCallCommand.swift */; };
+		C3428121258F47B000CD2EFA /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428120258F47B000CD2EFA /* UserInfoModel.swift */; };
+		C3428125258F48A800CD2EFA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428124258F48A800CD2EFA /* HomeViewController.swift */; };
+		C342812F258F4AEA00CD2EFA /* r0c0i - Linotte Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C342812A258F4AEA00CD2EFA /* r0c0i - Linotte Bold.ttf */; };
+		C3428130258F4AEA00CD2EFA /* r0c0i - Linotte Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C342812B258F4AEA00CD2EFA /* r0c0i - Linotte Heavy.ttf */; };
+		C3428131258F4AEA00CD2EFA /* r0c0i - Linotte Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C342812C258F4AEA00CD2EFA /* r0c0i - Linotte Regular.ttf */; };
+		C3428132258F4AEA00CD2EFA /* r0c0i - Linotte Semi Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C342812D258F4AEA00CD2EFA /* r0c0i - Linotte Semi Bold.ttf */; };
+		C3428133258F4AEA00CD2EFA /* r0c0i - Linotte Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C342812E258F4AEA00CD2EFA /* r0c0i - Linotte Light.ttf */; };
+		C3428138258F4C9900CD2EFA /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428137258F4C9900CD2EFA /* Extentions.swift */; };
+		C3428140258F6BAD00CD2EFA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342813F258F6BAD00CD2EFA /* ResponseModel.swift */; };
+		C3428160258F93A400CD2EFA /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C342815F258F93A400CD2EFA /* FriendsViewController.swift */; };
+		C3428165258F94F700CD2EFA /* FriendItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428163258F94F700CD2EFA /* FriendItemCell.swift */; };
+		C3428166258F94F700CD2EFA /* FriendItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3428164258F94F700CD2EFA /* FriendItemCell.xib */; };
+		C34785E5258DBAC400A62A0C /* SignalingSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34785E4258DBAC400A62A0C /* SignalingSocket.swift */; };
+		C39A20EC25C19CAA00F46AB7 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C39A20EB25C19CAA00F46AB7 /* audio.mp3 */; };
+		C3ADD27825BFF6B300C72DCB /* CallRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADD27725BFF6B300C72DCB /* CallRequestViewController.swift */; };
+		C3ADD27B25C01D9000C72DCB /* PeerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADD27A25C01D9000C72DCB /* PeerItemCell.swift */; };
+		C3C70AE725BE5B19003BBE3A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C70AE625BE5B19003BBE3A /* SessionManager.swift */; };
+		C3F9AE1F258B0D3900EC3329 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9AE1E258B0D3900EC3329 /* File.swift */; };
+		DB24FA9E451522D8D03577D3 /* Pods_VideoCallTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83618B8E7A75278C0A6976E9 /* Pods_VideoCallTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		606D2D19367FA85B7802A380 /* Pods-VideoCallTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCallTest.release.xcconfig"; path = "Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest.release.xcconfig"; sourceTree = "<group>"; };
+		83618B8E7A75278C0A6976E9 /* Pods_VideoCallTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCallTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B052425E216F83EDD2D8E67A /* Pods-VideoCallTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCallTest.debug.xcconfig"; path = "Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C306F88F2588D370006D0A14 /* VideoCallTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCallTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C306F8922588D370006D0A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C306F8962588D370006D0A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C306F8992588D370006D0A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C306F89B2588D370006D0A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C306F89E2588D370006D0A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C306F8A02588D370006D0A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C342811B258F472B00CD2EFA /* VideoCallCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallCommand.swift; sourceTree = "<group>"; };
+		C3428120258F47B000CD2EFA /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		C3428124258F48A800CD2EFA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C342812A258F4AEA00CD2EFA /* r0c0i - Linotte Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r0c0i - Linotte Bold.ttf"; sourceTree = "<group>"; };
+		C342812B258F4AEA00CD2EFA /* r0c0i - Linotte Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r0c0i - Linotte Heavy.ttf"; sourceTree = "<group>"; };
+		C342812C258F4AEA00CD2EFA /* r0c0i - Linotte Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r0c0i - Linotte Regular.ttf"; sourceTree = "<group>"; };
+		C342812D258F4AEA00CD2EFA /* r0c0i - Linotte Semi Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r0c0i - Linotte Semi Bold.ttf"; sourceTree = "<group>"; };
+		C342812E258F4AEA00CD2EFA /* r0c0i - Linotte Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r0c0i - Linotte Light.ttf"; sourceTree = "<group>"; };
+		C3428137258F4C9900CD2EFA /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		C342813F258F6BAD00CD2EFA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		C342815F258F93A400CD2EFA /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		C3428163258F94F700CD2EFA /* FriendItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendItemCell.swift; sourceTree = "<group>"; };
+		C3428164258F94F700CD2EFA /* FriendItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendItemCell.xib; sourceTree = "<group>"; };
+		C34785E4258DBAC400A62A0C /* SignalingSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingSocket.swift; sourceTree = "<group>"; };
+		C39A20EB25C19CAA00F46AB7 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
+		C3ADD27725BFF6B300C72DCB /* CallRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRequestViewController.swift; sourceTree = "<group>"; };
+		C3ADD27A25C01D9000C72DCB /* PeerItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerItemCell.swift; sourceTree = "<group>"; };
+		C3C70AE625BE5B19003BBE3A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		C3F54E8A258C425000338E95 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C3F54E8C258C425B00338E95 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C3F54E8E258C426800338E95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3F54E90258C427000338E95 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C3F54E92258C427C00338E95 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C3F54E94258C428A00338E95 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		C3F54E97258C429200338E95 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C3F54E9A258C429F00338E95 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C3F54E9C258C42AD00338E95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C3F54E9E258C42BA00338E95 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C3F54EA0258C42ED00338E95 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C3F54EA2258C42F400338E95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3F54EA4258C42FB00338E95 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C3F9AE1E258B0D3900EC3329 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C306F88C2588D370006D0A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB24FA9E451522D8D03577D3 /* Pods_VideoCallTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C306F8862588D370006D0A14 = {
+			isa = PBXGroup;
+			children = (
+				C306F8912588D370006D0A14 /* VideoCallTest */,
+				C306F8902588D370006D0A14 /* Products */,
+				C3F54E88258C424700338E95 /* Frameworks */,
+				F4AA481188FC8DEA3870F76A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C306F8902588D370006D0A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C306F88F2588D370006D0A14 /* VideoCallTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C306F8912588D370006D0A14 /* VideoCallTest */ = {
+			isa = PBXGroup;
+			children = (
+				C306F8922588D370006D0A14 /* AppDelegate.swift */,
+				C306F8A02588D370006D0A14 /* Info.plist */,
+				C3428123258F488D00CD2EFA /* View */,
+				C342811F258F479600CD2EFA /* Model */,
+				C34785E3258DBA9D00A62A0C /* Socket */,
+				C3428128258F4AC000CD2EFA /* Resource */,
+				C3428136258F4C8A00CD2EFA /* Ultis */,
+				C306F8962588D370006D0A14 /* ViewController.swift */,
+				C3F9AE1E258B0D3900EC3329 /* File.swift */,
+			);
+			path = VideoCallTest;
+			sourceTree = "<group>";
+		};
+		C342811F258F479600CD2EFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3428120258F47B000CD2EFA /* UserInfoModel.swift */,
+				C342813F258F6BAD00CD2EFA /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3428123258F488D00CD2EFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C342815E258F938300CD2EFA /* Cell */,
+				C306F8982588D370006D0A14 /* Main.storyboard */,
+				C306F89D2588D370006D0A14 /* LaunchScreen.storyboard */,
+				C3428124258F48A800CD2EFA /* HomeViewController.swift */,
+				C342815F258F93A400CD2EFA /* FriendsViewController.swift */,
+				C3ADD27725BFF6B300C72DCB /* CallRequestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3428128258F4AC000CD2EFA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C39A20EB25C19CAA00F46AB7 /* audio.mp3 */,
+				C306F89B2588D370006D0A14 /* Assets.xcassets */,
+				C3428129258F4AD000CD2EFA /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C3428129258F4AD000CD2EFA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C342812A258F4AEA00CD2EFA /* r0c0i - Linotte Bold.ttf */,
+				C342812B258F4AEA00CD2EFA /* r0c0i - Linotte Heavy.ttf */,
+				C342812E258F4AEA00CD2EFA /* r0c0i - Linotte Light.ttf */,
+				C342812C258F4AEA00CD2EFA /* r0c0i - Linotte Regular.ttf */,
+				C342812D258F4AEA00CD2EFA /* r0c0i - Linotte Semi Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C3428136258F4C8A00CD2EFA /* Ultis */ = {
+			isa = PBXGroup;
+			children = (
+				C3428137258F4C9900CD2EFA /* Extentions.swift */,
+			);
+			path = Ultis;
+			sourceTree = "<group>";
+		};
+		C342815E258F938300CD2EFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3428163258F94F700CD2EFA /* FriendItemCell.swift */,
+				C3428164258F94F700CD2EFA /* FriendItemCell.xib */,
+				C3ADD27A25C01D9000C72DCB /* PeerItemCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C34785E3258DBA9D00A62A0C /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				C34785E4258DBAC400A62A0C /* SignalingSocket.swift */,
+				C3C70AE625BE5B19003BBE3A /* SessionManager.swift */,
+				C342811B258F472B00CD2EFA /* VideoCallCommand.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		C3F54E88258C424700338E95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F54EA4258C42FB00338E95 /* VideoToolbox.framework */,
+				C3F54EA2258C42F400338E95 /* UIKit.framework */,
+				C3F54EA0258C42ED00338E95 /* QuartzCore.framework */,
+				C3F54E9E258C42BA00338E95 /* OpenGLES.framework */,
+				C3F54E9C258C42AD00338E95 /* MobileCoreServices.framework */,
+				C3F54E9A258C429F00338E95 /* MediaPlayer.framework */,
+				C3F54E97258C429200338E95 /* libz.tbd */,
+				C3F54E94258C428A00338E95 /* libbz2.tbd */,
+				C3F54E92258C427C00338E95 /* CoreVideo.framework */,
+				C3F54E90258C427000338E95 /* CoreMedia.framework */,
+				C3F54E8E258C426800338E95 /* CoreGraphics.framework */,
+				C3F54E8C258C425B00338E95 /* AVFoundation.framework */,
+				C3F54E8A258C425000338E95 /* AudioToolbox.framework */,
+				83618B8E7A75278C0A6976E9 /* Pods_VideoCallTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4AA481188FC8DEA3870F76A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B052425E216F83EDD2D8E67A /* Pods-VideoCallTest.debug.xcconfig */,
+				606D2D19367FA85B7802A380 /* Pods-VideoCallTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C306F88E2588D370006D0A14 /* VideoCallTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C306F8A32588D370006D0A14 /* Build configuration list for PBXNativeTarget "VideoCallTest" */;
+			buildPhases = (
+				1F0D65843ED538878548DFAE /* [CP] Check Pods Manifest.lock */,
+				2DCC0D6ADC1C5C5DF99A1F50 /* [CP] Prepare Artifacts */,
+				C306F88B2588D370006D0A14 /* Sources */,
+				C306F88C2588D370006D0A14 /* Frameworks */,
+				C306F88D2588D370006D0A14 /* Resources */,
+				7DDB930A87882C9BD74FE688 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoCallTest;
+			productName = VideoCallTest;
+			productReference = C306F88F2588D370006D0A14 /* VideoCallTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C306F8872588D370006D0A14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C306F88E2588D370006D0A14 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C306F88A2588D370006D0A14 /* Build configuration list for PBXProject "VideoCallTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C306F8862588D370006D0A14;
+			productRefGroup = C306F8902588D370006D0A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C306F88E2588D370006D0A14 /* VideoCallTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C306F88D2588D370006D0A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3428166258F94F700CD2EFA /* FriendItemCell.xib in Resources */,
+				C306F89F2588D370006D0A14 /* LaunchScreen.storyboard in Resources */,
+				C3428133258F4AEA00CD2EFA /* r0c0i - Linotte Light.ttf in Resources */,
+				C3428130258F4AEA00CD2EFA /* r0c0i - Linotte Heavy.ttf in Resources */,
+				C306F89C2588D370006D0A14 /* Assets.xcassets in Resources */,
+				C3428131258F4AEA00CD2EFA /* r0c0i - Linotte Regular.ttf in Resources */,
+				C306F89A2588D370006D0A14 /* Main.storyboard in Resources */,
+				C39A20EC25C19CAA00F46AB7 /* audio.mp3 in Resources */,
+				C3428132258F4AEA00CD2EFA /* r0c0i - Linotte Semi Bold.ttf in Resources */,
+				C342812F258F4AEA00CD2EFA /* r0c0i - Linotte Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0D65843ED538878548DFAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoCallTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DCC0D6ADC1C5C5DF99A1F50 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDB930A87882C9BD74FE688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoCallTest/Pods-VideoCallTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C306F88B2588D370006D0A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3428121258F47B000CD2EFA /* UserInfoModel.swift in Sources */,
+				C342811C258F472B00CD2EFA /* VideoCallCommand.swift in Sources */,
+				C3C70AE725BE5B19003BBE3A /* SessionManager.swift in Sources */,
+				C306F8972588D370006D0A14 /* ViewController.swift in Sources */,
+				C34785E5258DBAC400A62A0C /* SignalingSocket.swift in Sources */,
+				C3428138258F4C9900CD2EFA /* Extentions.swift in Sources */,
+				C3ADD27825BFF6B300C72DCB /* CallRequestViewController.swift in Sources */,
+				C3F9AE1F258B0D3900EC3329 /* File.swift in Sources */,
+				C3428160258F93A400CD2EFA /* FriendsViewController.swift in Sources */,
+				C3428125258F48A800CD2EFA /* HomeViewController.swift in Sources */,
+				C3428140258F6BAD00CD2EFA /* ResponseModel.swift in Sources */,
+				C306F8932588D370006D0A14 /* AppDelegate.swift in Sources */,
+				C3ADD27B25C01D9000C72DCB /* PeerItemCell.swift in Sources */,
+				C3428165258F94F700CD2EFA /* FriendItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C306F8982588D370006D0A14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C306F8992588D370006D0A14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C306F89D2588D370006D0A14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C306F89E2588D370006D0A14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C306F8A12588D370006D0A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C306F8A22588D370006D0A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C306F8A42588D370006D0A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B052425E216F83EDD2D8E67A /* Pods-VideoCallTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92RLFVBYK;
+				INFOPLIST_FILE = VideoCallTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.VideoCallTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C306F8A52588D370006D0A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 606D2D19367FA85B7802A380 /* Pods-VideoCallTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92RLFVBYK;
+				INFOPLIST_FILE = VideoCallTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky.VideoCallTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C306F88A2588D370006D0A14 /* Build configuration list for PBXProject "VideoCallTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C306F8A12588D370006D0A14 /* Debug */,
+				C306F8A22588D370006D0A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C306F8A32588D370006D0A14 /* Build configuration list for PBXNativeTarget "VideoCallTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C306F8A42588D370006D0A14 /* Debug */,
+				C306F8A52588D370006D0A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C306F8872588D370006D0A14 /* Project object */;
+}
